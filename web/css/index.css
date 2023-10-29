@@ -1,0 +1,180 @@
+html,body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    font-size: 0;
+}
+.warpper{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.warpper ul{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.warpper .item{
+    position: absolute;
+    list-style: none;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.warpper ul li img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    border-radius: 50%;
+    border:2px solid #fff;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.form{
+    position: absolute;
+    top:20%;
+    right: 15%;
+    width: 350px;
+    height: 365px;
+    background: #fff;
+    border-radius: 8px;
+    
+}
+.form .top{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    background: #7974B6;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.input-box{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.input-box input{
+    width: 100%;
+    padding:8px 0px;
+    margin: 10px 0px;
+}
+
+.input-box select{
+    width: 102%;
+    margin-top: 10px;
+    padding: 5px 0px;
+    cursor:pointer;
+}
+.off-box{
+    position: relative;
+    width: 80%;
+    margin: 5px auto 20px auto;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+
+.form button {
+    width: 81%;
+    height: 43px;
+    margin-left: 10%;
+    background: #9ED148;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 18px;
+    cursor:pointer;
+   
+}
+.toggle{
+    position: absolute;
+    left: 75px;
+    top: -5px;
+    width: 60px;
+    height: 20px;
+    /* background: #333; */
+    margin:0;
+    border-radius: 50px;
+    font-size: 10px;
+    border:1px solid #ccc;
+    /* box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5),0px 1px 0px rgba(255,255,255,0.2); */
+}
+.toggle:after{
+    content: 'OFF';
+    color: #d3d3d5;
+    position: absolute;
+    right:5px;
+    margin-top: -2px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255,255.255..15);
+    font-size: 10px;
+}
+.toggle:before{
+    content: 'ON';
+    color: #d3d3d5;
+    position: absolute;
+    left: 8px;
+    margin-top: -2px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+}
+.toggle label{
+    display: block;
+    width: 27px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    background: #fcfff4;
+    background: linear-gradient(top,#fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.toggle input[type=checkbox]{
+    visibility: hidden;
+}
+.toggle input:checked + label{
+    left: 32px;
+}
+
+
+
+
+
+.footer{
+    width: 80%;
+    margin: 10px auto;
+    font-size: 12px;
+    color: rgb(34, 7, 65);
+    cursor: pointer;
+}
+.footer span{
+    margin-right: 8px;
+}
